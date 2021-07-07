@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:background="@android:color/holo_blue_bright"
+
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:drawableEnd="@drawable/ic_baseline_arrow_back_24"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/btnTick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:drawableEnd="@drawable/ic_baseline_done_outline_24"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/tvAddBuyer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@id/btnBack"
+            android:text="Add Buyer"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+<TextView
+android:id="@+id/tvOrganizaton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/tvAddBuyer"
+    android:text="Organization Name"
+    android:layout_marginLeft="40dp"
+    android:textSize="15sp"
+    android:layout_marginTop="29dp"
+    />
+        <EditText
+            android:id="@+id/etOrganization"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvOrganizaton"
+            android:textSize="12dp"
+            android:layout_margin="15dp"
+
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        >
+
+<TextView
+    android:id="@+id/tvCustomer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="50dp"
+    android:layout_marginTop="7dp"
+    android:textSize="15dp"
+    android:text="Customer Name"
+    android:drawableStart="@drawable/ic_baseline_person_outline_24"
+    android:drawablePadding="15dp"
+
+/>
+        <EditText
+            android:id="@+id/etCustomer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="84dp"
+            android:layout_marginRight="15dp"
+            />
+        <TextView
+            android:id="@+id/tvMoblile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="7dp"
+            android:textSize="15dp"
+            android:text="Mobile Number"
+            android:drawableStart="@drawable/ic_baseline_person_outline_24"
+            android:drawablePadding="15dp"
+
+            />
+        <EditText
+            android:id="@+id/etMobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="84dp"
+            android:layout_marginRight="15dp"
+            />
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="7dp"
+            android:textSize="15dp"
+            android:text="Email"
+            android:drawableStart="@drawable/ic_baseline_person_outline_24"
+            android:drawablePadding="15dp"
+
+            />
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="84dp"
+            android:layout_marginRight="15dp"
+            />
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="7dp"
+            android:textSize="15dp"
+            android:text="Address"
+            android:drawableStart="@drawable/ic_baseline_person_outline_24"
+            android:drawablePadding="15dp"
+
+            />
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="84dp"
+            android:layout_marginRight="15dp"
+            />
+        <TextView
+            android:id="@+id/tvManfracturur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="7dp"
+            android:textSize="15dp"
+            android:text="Manfacturur"
+            android:drawableStart="@drawable/ic_baseline_person_outline_24"
+            android:drawablePadding="15dp"
+
+            />
+        <EditText
+            android:id="@+id/etManfacturur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="84dp"
+            android:layout_marginRight="15dp"
+            />
+        <TextView
+            android:id="@+id/tvTaxId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="7dp"
+            android:textSize="15dp"
+            android:text="Tax Id"
+            android:drawableStart="@drawable/ic_baseline_person_outline_24"
+            android:drawablePadding="15dp"
+
+            />
+        <EditText
+            android:id="@+id/etTaxId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="84dp"
+            android:layout_marginRight="15dp"
+            />
+        <TextView
+            android:id="@+id/tvCompanyId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="7dp"
+            android:textSize="15dp"
+            android:text="Company Id"
+            android:drawableStart="@drawable/ic_baseline_person_outline_24"
+            android:drawablePadding="15dp"
+
+            />
+        <EditText
+            android:id="@+id/etCompanyId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="84dp"
+            android:layout_marginRight="15dp"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>
